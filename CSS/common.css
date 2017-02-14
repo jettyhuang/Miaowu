@@ -1,0 +1,156 @@
+
+*{
+	margin:0;
+	padding:0;
+
+}
+
+html{
+	
+	overflow-x:hidden;
+}
+header{
+	
+	width:100%;
+	background-color:white;
+	border-top:4px solid rgb(133,193,85);
+}	
+
+
+#menuIcon {
+    display: none;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+    font-family: arial;
+}
+
+body{
+
+	font-size:1em;
+	width:100%;
+	background: #FBFEE9;
+	margin:0 auto;
+	height: 100%;	
+}
+
+div.head{
+	width:8%;	
+	margin:auto;
+	height: auto;
+
+}
+
+header h1{
+	
+	font-family:微软雅黑;
+	float:left;
+	color:rgb(133,190,10);
+	font-size:2em;
+	line-height:2.75em;
+	white-space:nowrap; 
+	
+}
+
+nav{
+
+	width:100%;
+	display:table;
+	background-color:rgb(136,200,51);
+	border-bottom: 1px #9c9c9c solid;
+	background-image:linear-gradient(to bottom,rgb(136,200,51),#8CC63F);
+}
+
+nav ul{
+	list-style: none;
+	display:table-row;
+
+}
+
+nav ul li{
+	text-align:center;
+	display:table-cell; 
+
+	font-size: 1.1em;	
+	height:auto;/*height:50px;*/
+	
+	line-height: 2.84090909em;
+	
+	width:10.204082%;
+	font-family: 黑体;
+	border-right: 1px #9c9c9c solid;
+
+
+}
+
+nav li:hover{
+	background-color: rgb(80,162,0);
+}
+
+
+nav a{
+	
+	color:white;
+}
+a{
+	text-decoration: none;
+}
+
+footer{
+	width:100%;
+	background: rgb(136,200,51);
+
+	margin-top:100px;
+	margin-bottom: 10px;
+	white-space:nowrap; 
+	display: table;
+	height:40px;
+	border-bottom: 1px #9c9c9c solid;
+	background-image:linear-gradient(to bottom,rgb(136,200,51),#8CC63F);
+}
+
+footer ul{
+	 display: table-row;
+}
+
+footer ul li{
+	text-align:center;
+	list-style: none;
+	display: table-cell;
+	 vertical-align:middle;
+
+}
+
+.selected{
+	background-color: rgb(80,162,0);
+}
+
+@media screen and (max-width:637px) {
+	
+	nav ul {
+	    display: none;
+	    padding: 0;
+	    margin: 0 5px;
+	}
+
+	#menuIcon {
+	    display: block;
+	    text-align: right;
+	    padding: 0 5px;
+	    border-bottom: 1px #9c9c9c solid;
+	}
+
+	nav ul li {
+	    width: 100%;
+	    display: inline-block;	
+	    line-height: 1.9em;
+	}
+}
+
+
+
+
+
+
+

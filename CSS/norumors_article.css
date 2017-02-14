@@ -1,0 +1,43 @@
+body{
+	background: #EDF6E4;
+	font-family:"Microsoft YaHei", 微软雅黑, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container{
+	width:80%;
+	margin:0 auto;
+
+
+}
+
+.title{
+	text-align: center;
+	margin:20px 0;
+}
+.info{
+	text-align: center;
+	color: #C0C0C2;
+	margin-bottom:10px;
+}
+.content{
+	background: #fff;
+	box-shadow: 1px 1px 1px 1px #ccc;
+	padding:15px;
+	line-height: 26px;
+	border-radius: 10px;
+}
+
+.image{
+	display: flex;
+	justify-content:center;
+	margin:10px;
+	padding:10px;
+}
+
+p{
+	text-indent:2em;
+}
+
+a{
+	color:#333;
+}

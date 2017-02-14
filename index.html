@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+<head>
+	<title>喵呜</title>
+	<meta name="viewport" content="initial-scale=1.0,user-scalable=no" charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="CSS/common.css">
+	<link rel="stylesheet" type="text/css" href="CSS/index.css">
+	<link rel="stylesheet" type="text/css" href="CSS/differscreens.css">
+	
+
+
+	<script src="jQuery/jquery.min.js"></script>
+
+	<script type="text/javascript">
+	/*
+	1. $(function(){}) 作用和内部实现
+	2. document.onload和documentContentLoaded事件的区别
+	3. 什么叫做页面加载完？什么叫做DOM加载完
+	*/
+		
+
+
+
+			//初始化
+			var size=$('.img li').size();
+			for(var i=1;i<=size;i++){
+				var li="<li>"+i+"</li>";
+				$('.num').append(li);
+			}
+
+			//手动控制轮播
+			$('.img li').eq(0).show();
+			$('.num li').eq(0).addClass('active');
+			$('.num li').mouseover(function(){
+
+				$(this).addClass('active').siblings().removeClass('active');
+
+				var index=$(this).index();
+				//alert(index);
+				i=index;
+				$('.img li').eq(index).stop().fadeIn(800).siblings().stop().fadeOut(800);
+			})
+
+			//自动轮播
+			var i=0;
+			var t=setInterval(moveRight,1800);
+
+			function moveLeft(){
+				i--;
+				if(i==-1){
+					i=size-1;
+				}
+				$('.num li').eq(i).addClass('active').siblings().removeClass('active');
+				$('.img li').eq(i).fadeIn(800).siblings().fadeOut(800);
+			}
+
+			function moveRight(){
+				i++;
+				if(i==size){
+					i=0;
+				}
+				$('.num li').eq(i).addClass('active').siblings().removeClass('active');
+				$('.img li').eq(i).fadeIn(800).siblings().fadeOut(800);
+			}
+
+			//定时器
+			$('.commonsense').hover(function(){
+				clearInterval(t)
+			},function(){
+				t=setInterval(moveRight,1800);
+			})
+
+			//左右按钮的点击
+			$('.commonsense .left').click(function(){
+				moveLeft()
+			})
+
+			$('.commonsense .right').click(function(){
+					moveRight()
+			})
+
+			$(function() {
+            $("#menuIcon,nav ul li").click(function() {
+                if ($("#menuIcon").is(":visible")) { //防止宽屏上点击
+                    $("nav ul").toggle(400);
+                };
+            });
+        	});
+        	// $("#ukduanmao").click(function(event){
+        	// 	event.preventDefault();
+        		
+        	// })
+	</script>
+</head>
+<body>
+	<header>
+		<div class="head">
+			
+			<a href=""><h1>喵呜</h1></a>
+
+		</div>
+		
+		<nav>
+			<a href="#" id="menuIcon">Ξ</a>
+			<ul>
+				<li class="selected"><a href="#">主页</a></li>
+				<li><a href="commonsense.html">猫奴常识</a></li>
+				<li><a href="norumors.html">谣言粉碎机</a></li>	
+				<li><a href="experience.html">经验分享</a></li>
+				<li><a href="#">我与猫猫</a></li>
+				<li><a href="recommend_website.html">推荐</a></li>
+				<li><a href="species.html">猫猫种类</a></li>
+			</ul>
+
+		</nav>
+	
+	</header>
+
+	<div class="row1">
+		<div class="commonsensetitle"><h4><a href="">猫奴常识</a></h4></div>
+		<div class="commonsense">
+			
+			<ul class="img">
+				<li><a href="#"><img src="img/cat1.gif" alt=""></a></li>
+				<li><a href="#"><img src="img/cat2.gif" alt=""></a></li>
+				<li><a href="#"><img src="img/cat3.gif" alt=""></a></li>
+			</ul>
+
+			<ul class="num">
+				
+			</ul>
+
+			<div class="left btn"><</div>
+			<div class="right btn">></div>
+
+		</div>
+
+		<div class="expshare">
+			<h4><a href="experience.html">经验分享</a></h4>
+			<ul>
+				<li><a href="experience_content.html">养猫需要做什么准备工作？</a></li>
+				<li><a href="experience_content.html">养猫是一种怎样的体验？</a></li>
+				<li><a href="experience_content.html">喵喵长跳蚤了？！</a></li>	
+				<li><a href="experience_content.html">发烧了，怎么处理比较妥当？</a></li>	
+				<li><a href="experience_content.html">喵很排斥洗澡，怎么办？</a></li>			
+				<li><a href="experience_content.html">猫身上长蜱虫了，怎么办？</a></li>	
+
+			</ul>
+
+			<div class="bt"><a href="experience.html" class="button">更多&gt;&gt;</a></div>
+
+		</div>
+	</div>	
+	<div class="article">
+		<div class="noRumors">
+			<h4><a href="norumors.html">谣言粉碎机</a></h4>
+			<ul><li><a href="norumors_article1.html">主人死后猫会开始吃尸体，狗则不会?</a></li>
+				<li><a href="norumors_article2.html">猫在临死时会躲到人类看不见的地方等待死亡?</a></li>
+				<li><a href="norumors_article3.html">主人死后猫会开始吃尸体，狗则不会?</a></li>
+				<li><a href="norumors_article4.html">只养在家里的猫不需要打疫苗?</a></li>
+
+			</ul>
+			<!-- <br><br><br> -->
+			<div class="bt"><a href="norumors.html" class="button">更多&gt;&gt;</a></div>
+
+		</div>
+		<div class="catandme">
+			<h4><a href="">我与猫猫</a></h4>
+			<p class="suojin"><a href="">我与家中两只猫猫的爱恨情仇……</a></p>
+
+			<div class="bt"><a href="#" class="button">更多&gt;&gt;</a></div>
+
+		</div>
+		<div class="recommend">
+			<h4><a href="recommend_website.html">推荐</a></h4>
+			<ul><li><a href="recommend_website.html">猫猫网站推荐</a></li>
+				<li><a href="recommend_book.html">猫猫书籍推荐</a></li>
+				<li><a href="recommend_movie.html">猫猫电影推荐</a></li>
+				
+				
+			</ul>
+
+			<div class="bt"><a href="recommend_website.html" class="button">去看看&gt;&gt;</a></div>
+
+		</div>
+
+
+		<div class="species">
+			<h4><a href="">猫猫种类</a></h4>
+			<ul>
+				<li id="chinalihua"><a href="species.html"><img src="thumbnails/中国狸花猫.gif"></a></li>
+
+				<li id="ukduanmao"><a href=""><img src="thumbnails/英国短毛猫.gif" ></a></li>
+				<li><a href=""><img src="thumbnails/暹罗猫.gif"></a></li>
+				<li><a href=""><img src="thumbnails/重点色短毛猫.gif"></a></li>
+				<li><a href=""><img src="thumbnails/德文卷毛猫.gif"></a></li>
+				<li><a href=""><img src="thumbnails/挪威森林猫.gif"></a></li>
+
+			</ul>
+			<div class="bt"><a href="species.html" class="button">更多&gt;&gt;</a></div>
+
+		</div>
+
+	</div>
+
+	<footer>
+		<ul>
+			<li>--<a href="">关于本站</a>--</li>
+			<li>--<a href="">关于我</a>--</li>
+		</ul>
+	</footer>
+
+</body>
+</html>

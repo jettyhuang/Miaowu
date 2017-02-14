@@ -1,0 +1,119 @@
+.wrapper{
+	width:85%;
+	margin:0 auto;
+
+
+}
+
+.search{
+	width:146px;
+	height: 23px;
+	overflow:hidden;
+	padding:0 10px;
+	color:#333;
+	float:left;
+	border:1px solid #d9dbde;
+	border-right:0;
+}
+
+input{
+	outline:0;
+	margin-top:20px;
+}
+
+.searchbtn{
+	width:33px;
+	height: 25px;
+	padding:0;
+	background:url(http://tb2.bdstatic.com/tb/img/nav_search_internal_bright_6950208.png) no-repeat 0 0;
+	/*display: inline-block;*/
+	border:0;
+	outline: 0;
+	cursor: pointer;
+	margin-top:20px;
+}
+
+i{
+	text-shadow:none;
+
+}
+
+.list{
+	color:#333;
+	margin-top:20px;
+	padding:0;
+	width:78%;
+}
+
+
+.list ul{
+	list-style: none;
+	margin:0;
+	padding:0;
+	display: block;
+	font-family: 微软雅黑;
+	line-height: 44px;
+}
+
+.list ul li{
+	position: relative;
+	border-bottom:1px dotted #e4e6eb;
+	list-style: none;
+
+}
+
+.pagenums{
+	margin-left:20px;
+	margin-top:25px;
+	margin-bottom:25px;
+	font-size: 14px;
+}
+
+.pagenums span{
+	padding:5px 9px;
+	color:black;
+}
+
+.pagenum{
+	padding:5px 9px;
+	color:#666;
+	border:1px solid #e6e6e6;
+}
+
+.pagenum:hover{
+	color:#2d64b3;
+	border:1px solid #2d64b3;
+}
+
+/*.want{
+	float:left;
+	position: relative;
+	top:-420px;
+	left:1080px;
+	width:20%;
+}
+.want button{
+
+	padding:10px;
+	font-size: 18px;
+	border:0px;
+	border-radius: 5px;
+	background: #8AC739;
+	color:white;
+	font-family: 微软雅黑;
+	outline:none;
+	cursor: pointer;
+
+}
+
+.want button:hover{
+	background: #50A200;
+}
+
+.write{
+	width:78%;
+	height:300px;
+	display:none;
+	border:1px solid #e6e6e6;
+	border-radius: 10px;
+}*/

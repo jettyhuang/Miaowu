@@ -1,0 +1,85 @@
+body{
+	font-family: 微软雅黑;
+	color:#333;
+	line-height: 26px;
+}
+.wrapper{
+	width:82%;
+	margin:30px auto;
+	overflow: auto;
+}
+
+.tagnavs{
+	display:table;
+	margin-top:10px;
+	margin-bottom:10px;
+
+}
+.tagnavs ul{
+	list-style: none;
+	display: table-row;
+
+
+}
+
+.tagnavs ul li{
+	/*display: table-cell;*/
+	border:1px solid #ccc;
+	padding:5px;
+	margin:3px;
+	display: inline;
+	font-size:14px;
+	
+}
+
+.tagnavs ul li:first-child{
+	margin-left:0;
+}
+
+.tagnavs li.tagselected{
+	border-color: orange;
+}
+
+article{
+	/*width:840px;*/
+	width:72%;
+	background: #F4ECF9;
+	float:left;
+	/*margin-right:10px;*/
+	margin-right: 0.8927615%;
+	box-shadow: 1px 1px 1px 1px #ccc;
+	/*line-height: 22px;*/
+	margin-bottom:10px;
+	padding:10px;
+
+}
+
+/*article:not(.xixiao){
+	display: none;
+}*/
+
+div article:nth-of-type(n+2){
+	display:none;
+}
+
+.commonsensepick{
+	/*width:270.12px;*/
+	width:23%;
+	background:#F4ECF9;
+	float:left;
+	padding-left:10px;
+	box-shadow: 1px 1px 1px 1px #ccc;
+	margin-bottom:5px;
+}
+
+.commonsensepick ul{
+	list-style: none;
+}
+
+a{
+	color:#333;
+}
+
+.titles{
+	margin:20px 0;
+}

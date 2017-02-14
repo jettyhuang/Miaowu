@@ -1,0 +1,259 @@
+.selected{
+	background-color: rgb(80,162,0);
+}
+div.row1{
+	width:82%;	
+
+	position: relative;
+	height:440px;
+	margin:0 auto;
+	top:10px;
+	overflow: hidden;
+}
+div.commonsensetitle{
+	position: absolute;
+
+}
+div.commonsensetitle h4{
+	width:586px;
+	height:20px;
+}
+
+div.commonsense{
+	width:586px;
+	height: 400px;
+
+	position: absolute;
+	bottom:0;
+}
+
+
+.commonsense ul{
+	list-style: none;
+}
+
+.commonsense .img li{
+	position: absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right: 0;
+	display: block;
+}
+
+
+.commonsense .num{
+	position: absolute;
+
+	bottom:0;
+	left:0;
+	font-size: 0;
+	text-align: center;
+	width:100%;
+
+}
+
+.commonsense .num li{
+	width:20px;
+	height: 20px;
+	background-color: #666;
+	color:#fff;
+	text-align:center;
+	border-radius: 50%;
+	display:inline-block;
+	font-size: 0.875em;
+	margin:10px 3px;
+
+	cursor:pointer;
+
+}
+
+.commonsense .num li.active{
+	background: #a00;
+}
+
+.commonsense .btn{
+	position: absolute;
+	top:50%;
+	margin-top:-5.115133%;
+	width:-5.115133%;
+	height:14.230266%;
+	background:rgba(0,0,0,0.5);
+	color:#fff;
+	text-align: center;
+	line-height:1.5em;
+	font-size:2.5em;
+	display:none;
+	cursor: pointer;
+}
+
+.commonsense:hover .btn{
+	display: block;
+}
+.commonsense .left{
+	left:0;
+}
+
+.commonsense .right{
+	right:0;
+}
+
+.expshare{
+	width:52%;
+	background: #EEFCD3;
+	position: absolute;
+
+	top:0;
+	bottom:0;	
+	left:597px;
+	border-bottom: 1px #E4EAF2 solid;
+	border-right:1px #E4EAF2 solid;
+}
+
+.article div.bt{
+	position: absolute;
+	left:70%;
+	top:88%;
+}
+
+.species div.bt{
+	top:110%;
+	left:90%;
+}
+.expshare div.bt{
+	position: absolute;
+	left:70%;
+	top:90%;
+}
+.row1 h4,
+.expshare h4,
+.species h4{
+	text-indent: 3px;
+	border-bottom: 1px solid #d1d1d1;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+}
+
+.article a,
+.row1 a{
+	color:#7e7e7e;
+}
+
+.article a:hover,
+.row1 a:hover
+{
+	color:black;
+}
+
+.expshare ul li,
+.noRumors ul li,
+.recommend ul li{
+	list-style:none;
+	text-indent: 12px;
+	margin:3.422626%;
+
+	line-height:1.25em;
+}
+
+.button{
+	background:#ccc;
+	padding:0.6em;
+	font-size: 0.8em;
+	color:white;
+	border-radius: 10%;	
+	background-image:linear-gradient(to bottom,#ccc,#B7B6B4);
+}
+
+
+.button:hover{
+	background-color: #ABABAB;
+}
+
+div.article{
+	width:82%;
+	height:520px;
+	position: relative;
+	margin:0 auto;
+
+	/*background: #B5FF8C;*/
+
+	top:22px;
+	overflow: hidden;
+}
+
+.noRumors,
+.catandme,
+.recommend{
+
+	width:33%;
+	height:250px;
+	border-bottom: 1px #E4EAF2 solid;
+	border-right:1px #E4EAF2 solid;
+}
+
+.noRumors{
+	position: absolute;
+	background: #DFFAC5;
+}
+
+.catandme{
+	position: absolute;
+	left:33.8%;
+	top:0;
+	background: #BEFCAE;
+
+}
+
+.recommend{
+	position: absolute;
+	left:67.8%;
+	top:0;
+	right: 0;
+	background: #B2F494;
+}
+
+.noRumors h4,
+.catandme h4,
+.recommend h4{
+	text-indent: 3px;
+	border-bottom: 1px solid #d1d1d1;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+}
+
+.catandme p{
+	text-indent: 22px;
+	padding:0 5px 5px;
+}
+
+.species{
+	width: 100%;
+	position: absolute;
+	left:0;
+	right: 0;
+	top:55%; 
+	
+}
+
+.species ul li{
+
+	width:15%;
+	display: inline-block;
+	margin-left:0.7587239%;
+}
+
+img{ 
+	width: 100%; 
+	max-width: 100%; 
+	display: block;  
+}
+
+.commonsense img{
+	min-height:204.778157px;
+	min-width: 300px;
+}
+
+
+nav a{
+	display: block;
+}

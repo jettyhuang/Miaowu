@@ -1,0 +1,195 @@
+ul{
+	list-style: none;
+
+}
+a{
+	text-decoration: none;
+}
+
+/*#container{
+	position:relative;
+}*/
+.species_pick{
+	/*width:280px;*/
+	/*height:600px;*/
+	position:relative;
+	top:20px;
+	left:10px;
+	float:left;
+
+
+}
+
+/*.species_pick::after{
+	content:'';
+	clear:both;
+	display: block;
+
+}*/
+
+/*.species_pick li{
+	width:100px;
+}*/
+
+.species_pick li a{
+	display: block;
+	/*width:80px;*/
+	padding: 0px 10px;
+	text-align: right;
+	position:relative;
+	z-index: 10;
+	height: 50px;
+	border-right: 1px solid #ddd;
+	background: rgba(255,255,255, 0.8);
+}
+
+.species_pick li:hover a{
+	background: rgba(225,239,240, 0.4);
+}
+.species_pick li a span{
+	font-weight: 400;
+	line-height: 50px;
+	
+	/*-webkit-transition: color 0.2s linear;
+	-moz-transition: color 0.2s linear;
+	-o-transition: color 0.2s linear;
+	-ms-transition: color 0.2s linear;
+	transition: color 0.2s linear;*/
+}
+.species_pick li img{
+	position: absolute;
+	z-index: 1;
+	left: 0px;
+	top: 0px;
+	opacity: 0;
+	-webkit-transition: left 0.4s ease-in-out, opacity 0.6s ease-in-out;
+	-moz-transition: left 0.4s ease-in-out, opacity 0.6s ease-in-out;
+	-o-transition: left 0.4s ease-in-out, opacity 0.6s ease-in-out;
+	-ms-transition: left 0.4s ease-in-out, opacity 0.6s ease-in-out;
+	transition: left 0.4s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.species_pick li:nth-of-type(n+3) img{
+	top:100px;
+}
+.species_pick li:nth-of-type(n+5) img{
+	top:200px;
+}
+.species_pick li:nth-of-type(n+7) img{
+	top:300px;
+}
+.species_pick li:nth-of-type(n+9) img{
+	top:400px;
+}
+.species_pick li:nth-of-type(n+11) img{
+	top:500px;
+}
+
+
+.species_pick li:hover img{
+	left:110px;
+	opacity: 1;
+}
+
+.species_pick li:nth-of-type(n+3):hover img{
+	top:100px;
+	
+}
+
+.species_pick li:nth-of-type(n+5):hover img{
+	top:200px;	
+}
+
+.species_pick li:nth-of-type(n+7):hover img{
+	top:300px;	
+}
+
+.species_pick li:nth-of-type(n+9):hover img{
+	top:400px;	
+}
+.species_pick li:nth-of-type(n+11):hover img{
+	top:500px;	
+}
+
+
+/*.container{
+	float:right;
+	
+}*/
+
+#catname{
+	position:relative;
+	left:20px;
+	top:80px;
+	font-family: 黑体;
+	font-size:24px;
+}
+#introduction{
+	position: relative;
+	/*left:280px;*/
+	width:950px;
+	margin-left:280px;
+
+
+}
+
+div.image{
+
+	display:flex;
+    justify-content: flex-end;
+    position: relative;
+    right:50px;
+
+}
+
+.image img{
+	border-radius:50%;
+	/*position: relative;*/
+}
+
+.image img:hover{
+	width:300px;
+	height:199.5px;
+}
+#content{
+	/*margin-top:50px;*/
+	background: white;
+	/*margin-left:275px;*/
+	
+	border-radius: 15px;
+	box-shadow: 1px 1px 1px 1px #ccc;
+	/*font-size:16px;*/
+	font-family: 微软雅黑;
+	font-size:18px;
+	line-height:26px;
+	padding:30px;
+	/*position: relative;
+	 left:-50px;*/
+}
+
+#content ol{
+	padding-left:50px;
+}
+
+
+#content img{
+	animation: fade-in;  
+    animation-duration: 4s;  
+    -webkit-animation:fade-in 1.5s;  
+}
+
+@keyframes fade-in {  
+    0% {opacity: 0;}/*初始状态 透明度为0*/  
+    40% {opacity: 0;}/*过渡状态 透明度为0*/  
+    100% {opacity: 1;}/*结束状态 透明度为1*/  
+}  
+@-webkit-keyframes fade-in {/*针对webkit内核*/  
+    0% {opacity: 0;}  
+    40% {opacity: 0;}  
+    100% {opacity: 1;} 
+} 
+
+
+
+
+
